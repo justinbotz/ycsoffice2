@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+            <img id="ycs" src="ycs.jpg">
+            <a-asset-item id="desk" src="desk.glb"></a-asset-item>
+      </a-assets>
+    
+          <a-image position="0 0 -4" rotation="-90 0 0" src="#ycs" width="6" height="3" ></a-image>
+          <a-gltf-model src="#desk" gltf-model="desk.glb" id="desk1" position="0.7262 0.285 -3.20499" material="color: #a7f9ff; flatShading: true" scale="0.5 0.5 0.5" rotation="0 270 0"></a-gltf-model>
+          <a-gltf-model src="#desk" gltf-model="desk.glb" id="desk3" position="1.74875 0.285 -3.20905" material="color: #a7f9ff; flatShading: true" scale="0.5 0.5 0.5" rotation="0 270 0"></a-gltf-model>
+          <a-gltf-model src="#desk" gltf-model="desk.glb" id="desk2" position="0.79854 0.285 -4.14231" material="color: #a7f9ff; flatShading: true" scale="0.5 0.5 0.5" rotation="0 270 0"></a-gltf-model>
+          <a-gltf-model src="#desk" gltf-model="desk.glb" id="desk4" position="1.86439 0.285 -4.1376" material="color: #a7f9ff; flatShading: true" scale="0.5 0.5 0.5" rotation="0 270 0"></a-gltf-model>
+
+          <a-entity geometry="primitive: cylinder" position="-1.9223 0.02037 -4.07751" scale="0.33 0.47 0.71"></a-entity>
+          <a-entity text__door="anchor: align; color: #84ffec; height: 4.44; value: door; width: 4.06" id="door" position="-2.17935 0.35151 -2.31819"></a-entity>
+          <a-entity text__window="value: Window; anchor: align; height: 4.44; width: 4.06; color: #84ffec" id="window" position="1.079 .45 -5.88"></a-entity>
+          <a-entity text__window="value: Window; anchor: align; height: 4.44; width: 4.06; color: #84ffec" id="window2" position="1.93993 0.61087 -3.16029" rotation="0 270 0"></a-entity>
+          <a-sky color="#000000" material="color: #c461d7" geometry=""></a-sky>
+    </a-scene>
+  </body>
+</html>
